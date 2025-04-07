@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Presenças</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>📋 Registro de Presença</h1>
+
+    <form id="form-presenca" class="form">
+      <label for="aluno">Nome do aluno</label>
+      <input type="text" id="aluno" name="aluno" required placeholder="Ex: Maria Oliveira" />
+
+      <label for="data">Data (opcional)</label>
+      <input type="date" id="data" name="data" />
+
+      <button type="submit">Registrar</button>
+    </form>
+
+    <div class="divider"></div>
+
+    <h2>✅ Presenças recentes</h2>
+    <ul id="presencas" class="lista-presencas"></ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.5/dist/umd/supabase.min.js"></script>
+  <script src="config/supabase.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
